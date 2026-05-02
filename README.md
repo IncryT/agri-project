@@ -1,116 +1,82 @@
-Agric-project
-WELCOME 
-User Manual: Agricultural Price Advisor System (APAS)
-Overview
-APAS (Agricultural Price Advisor System) is a web-based platform designed to help farmers make informed decisions about crop pricing and market trends. The system provides real-time market data, pricing calculators, AI-powered advice, and subscription-based SMS alerts.
+# 🌾 Agricultural Price Advisor System (APAS)
 
-Accessing the Website
-Once deployed, users can access APAS through a web browser at the deployed URL (e.g., https://apas.example.com).
+> **Empowering small-scale producers with data-driven pricing and market transparency.**
 
-User Types
-The system supports two primary user roles:
+APAS is a web-based platform designed to bridge the information gap for farmers. By providing real-time market trends, AI-powered advisory services, and precise profit margin simulators, the system ensures farmers can maximize their returns and navigate market volatility with confidence.
 
-Farmers - Access pricing tools, calculators, chatbot, and subscription services
-Administrators - Manage products, market prices, and farmer data
-Getting Started
-1. Landing Page Experience
-When visiting the root URL, users see:
+---
 
-Live market ticker showing real-time crop prices (Wheat, Corn, Soybeans, Rice, Barley)
-Hero section explaining the value proposition
-“Get Started” button for registration
-“Sign In” button for existing users
-2. User Registration
-To create an account:
+## 🚀 Quick Links
+[Features](#-key-features) • [User Roles](#-user-types) • [Interface](#-farmer-interface) • [Security](#-security-features) • [Getting Started](#-getting-started)
 
-Click “Get Started” on the landing page or navigate to /register
-Fill in required information (name, email, password)
-Select user role (Farmer or Admin)
-Complete email verification
-Log in with credentials
-3. User Login
-Existing users can:
+---
 
-Click “Sign In” on landing page or navigate to /login
-Enter email and password
-Access their role-specific dashboard
-Farmer Interface
-After logging in as a farmer, users access:
+## 🌟 Key Features
 
-Dashboard (/farmer/dashboard)
-Overview of market prices for various crops
-Minimum Recommended Price (MRP) calculations
-Visual indicators for price trends
-Calculator (/farmer/calculator)
-Input cost of production, desired profit margin, and risk factors
-Calculate optimal selling price
-View detailed breakdown of costs and profits
-Chatbot Advisor (/farmer/chatbot)
-AI-powered agricultural advisor
-Ask questions about pricing, market trends, or farming practices
-Receive data-driven recommendations
-Services Discovery (/farmer/services)
-Browse available agricultural services in the area
-Find input suppliers, equipment rentals, processing facilities
-Subscription Management (/farmer/subscriptions)
-Subscribe to SMS price alerts for specific crops
-Set price thresholds for notifications
-Manage active subscriptions
-Administrator Interface
-After logging in as an admin, users access:
+| Feature | Description |
+| :--- | :--- |
+| **📈 Live Market Ticker** | Real-time price updates for major crops (Wheat, Corn, Soybeans, etc.) with color-coded trend indicators. |
+| **🧮 Profit Simulator** | A cost-plus pricing model that factors in production costs, risk adjustments, and desired margins to calculate optimal selling prices. |
+| **🤝 Direct Marketplace** | A streamlined interface for direct trading, removing unnecessary intermediaries to improve farmer revenue. |
+| **🤖 AI Chatbot** | A dedicated agricultural advisor trained to answer pricing and best-practice queries in natural language. |
+| **📲 SMS Alert System** | One-way system notifications and price threshold alerts delivered directly to mobile devices via Twilio. |
 
-Admin Dashboard (/admin/dashboard)
-System overview with product and price count statistics
-Data update scheduling controls
-Alert system configuration
-Product Management (/admin/products)
-View, create, and manage crop types
-Define units of measurement (kg, quintal, ton, etc.)
-Market Price Management (/admin/market-prices)
-Record and update market prices for different districts
-Track price history and trends
-Farmer Management (/admin/farmers)
-View registered farmers
-Manage farmer profiles and details
-Geographic distribution mapping
-Key Features Explained
-Live Market Ticker
-Continuously scrolls real-time prices for major crops
-Shows price changes with color coding (green for increase, red for decrease)
-Updates automatically from database
-Pricing Calculator
-Uses cost-plus pricing model with risk adjustment
-Factors in production costs, desired profit, market conditions
-Provides provisional prices when market data is limited
-AI Chatbot
-Trained on agricultural pricing data and best practices
-Answers questions in natural language
-Provides contextual advice based on user location and crop preferences
-SMS Alert System
-Sends price notifications via SMS
-Configurable thresholds and frequency
-Helps farmers time their market entries optimally
-Navigation
-Persistent top navigation bar with application logo
-Role-specific sidebar menus (not shown in Blade files but implied by route groups)
-Breadcrumb navigation in internal pages
-Responsive design for mobile and desktop use
-Security Features
-Email verification required for registration
-Password protection with Laravel’s built-in authentication
-Role-based access control (Farmers vs Administrators)
-CSRF protection on all forms
-Session timeout for inactive users
-Getting Help
-In-app chatbot for immediate assistance
-Documentation links in footer
-Contact information available in website footer
-Email support for technical issues
-Mobile Access
-The application is fully responsive and works on:
+---
 
-Smartphones (iOS and Android)
-Tablets
-Desktop computers
-No separate mobile app required - accessible through any modern browser
-Last updated: 2026-05-02# agri-project
+## 👥 User Types
+
+### 👨‍🌾 Farmers
+* **Market Insights:** View real-time prices and historic trends.
+* **Calculators:** Use the **Profit Margin Simulation** tool to input specific production costs and risk factors.
+* **Advisory:** Access the AI Chatbot for data-driven farming advice.
+* **Subscriptions:** Manage one-way SMS alerts for specific crop thresholds.
+
+### 🔑 Administrators
+* **Product Control:** Manage crop types and units of measurement.
+* **Market Data:** Record and update district-specific prices and history.
+* **User Management:** Oversee farmer profiles and monitor geographic distribution of users.
+
+---
+
+## 🛠️ Tech Stack
+
+Built with a robust, modern architecture:
+* **Backend:** PHP Laravel
+* **Database:** MySQL
+* **Frontend:** React / Blade (Responsive Design)
+* **Communications:** Twilio SMS API
+* **Deployment:** GitHub Pages / Custom Domain (`agric-user.com`)
+
+---
+
+## 🖥️ Getting Started
+
+### 1. Landing Page
+The landing page features a **Live Market Ticker** and a clear call to action for users to register or sign in.
+
+### 2. Registration & Login
+* **Browser-Based:** Registration and login are handled via the web interface. 
+* **Role Selection:** Users specify their role (Farmer or Admin) during signup.
+* **Verification:** Email verification is required to activate the account.
+
+### 3. Navigation
+The system uses a persistent top navigation bar and role-specific sidebar menus for quick access to the **Profit Simulator**, **Service Discovery**, and **Subscription Management**.
+
+---
+
+## 🔒 Security Features
+
+* **Role-Based Access Control (RBAC):** Ensures data integrity between Farmers and Admins.
+* **Secure Authentication:** Built using Laravel’s standard authentication protocols.
+* **One-Way Notifications:** System-to-user SMS ensures farmers receive verified pricing updates.
+* **Responsive Design:** Optimized for mobile, tablet, and desktop browsers.
+
+---
+
+## 📖 Documentation & Support
+
+* **In-App Help:** Use the chatbot for immediate assistance with system features.
+* **Technical Support:** Contact details and documentation links are located in the site footer.
+
+**Last Updated:** `2026-05-02`  
+**Project Identifier:** `agri-project`
