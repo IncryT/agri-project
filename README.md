@@ -17,7 +17,6 @@ APAS is a web-based platform designed to bridge the information gap for farmers.
 | :--- | :--- |
 | **📈 Live Market Ticker** | Real-time price updates for major crops (Wheat, Corn, Soybeans, etc.) with color-coded trend indicators. |
 | **🧮 Profit Simulator** | A cost-plus pricing model that factors in production costs, risk adjustments, and desired margins to calculate optimal selling prices. |
-| **🤝 Direct Marketplace** | A streamlined interface for direct trading, removing unnecessary intermediaries to improve farmer revenue. |
 | **🤖 AI Chatbot** | A dedicated agricultural advisor trained to answer pricing and best-practice queries in natural language. |
 | **📲 SMS Alert System** | One-way system notifications and price threshold alerts delivered directly to mobile devices via Twilio. |
 
@@ -52,12 +51,12 @@ Built with a robust, modern architecture:
 ## 🖥️ Getting Started
 
 ### 1. Landing Page
-The landing page features a **Live Market Ticker** and a clear call to action for users to register or sign in.
+The landing page features a **Live Market Ticker** and a clear call to action for users to Get Started or sign in.
 
 ### 2. Registration & Login
 * **Browser-Based:** Registration and login are handled via the web interface. 
 * **Role Selection:** Users specify their role (Farmer or Admin) during signup.
-* **Verification:** Email verification is required to activate the account.
+* **Details:** Enter username,phone number .email click get current location for a smooth registration.
 
 ### 3. Navigation
 The system uses a persistent top navigation bar and role-specific sidebar menus for quick access to the **Profit Simulator**, **Service Discovery**, and **Subscription Management**.
